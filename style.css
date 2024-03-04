@@ -40,3 +40,31 @@ body {
 .nav-link a:visited {
     color: black;
 }
+
+/* ABOUT */
+
+#about {
+    display: flex;
+    align-items: center;
+}
+
+#intro-container {
+    font-size: 3rem;
+    margin: 0 1rem;
+}
+
+#intro-container span {
+    display: block;
+}
+
+#tech-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+}
+
+.tech-icon {
+    width: 100px;
+    height: auto;
+}
