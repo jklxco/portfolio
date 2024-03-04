@@ -6,7 +6,7 @@
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -23,8 +23,6 @@
     list-style: none;
     width: 800px;
     justify-content: space-around;
-
-    
 }
 
 .nav-link a {
@@ -49,6 +47,12 @@
     display: block;
 }
 
+#intro-container p {
+    color: grey;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
 #tech-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -62,4 +66,29 @@
     padding: 5px;
     border-radius: 10%;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+/* PROJECTS */
+
+#projects h2 {
+    text-align: center;
+}
+
+.project-card {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.project-card * {
+    padding: 0.5rem;
+}
+
+.project-card span {
+    background-color: rgb(63, 62, 62);
+    color: white;
+    padding: 0.25rem 0.5rem;
+}
+
+.project-card img {
+    width: 400px;
 }
