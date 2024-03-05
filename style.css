@@ -5,17 +5,29 @@
     margin: 0;
 }
 
-.container {
-    max-width: 1200px;
+.container {   
     margin: auto;
+    
+}
+
+section {
+    height: 100vh;
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    align-items: center;
 }
 
 /* NAVBAR */
 #navbar {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
-    padding-top: 1rem;
+    background-color: black;
 }
 
 #nav-links {
@@ -27,14 +39,13 @@
 
 .nav-link a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /* ABOUT */
 
 #intro {
     display: flex;
-    height: 80vh;
     align-items: center;
 }
 
@@ -70,6 +81,11 @@
 
 /* PROJECTS */
 
+#projects {
+    flex-direction: column;
+    justify-content: center;
+}
+
 #projects h2 {
     text-align: center;
 }
@@ -91,25 +107,20 @@
 
 .project-card img {
     width: 400px;
+    
 }
 
 /* CONTACT FORM */
 
-#contact {
-    margin-top: 3rem;
-}
-
-#contact > h2 {
-    text-align: center;
-}
-
 form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    width: 600px;
     margin: auto;
-    padding-bottom: 3rem;
-    
+}
+
+form h2 {
+    text-align: center;
 }
 
 input, textarea {
@@ -121,10 +132,10 @@ button {
     font-size: 1rem;
     width: fit-content;
     padding: 0.5rem 1rem;
-    margin: auto;
     background-color: orangered;
     color: white;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    margin: 1rem auto;
 }
