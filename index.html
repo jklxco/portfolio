@@ -60,15 +60,16 @@
         </section>
         
         <section id="contact">
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
                 <h2>Contact Me</h2>
+                <input type="hidden" name="access_key" value="932c5149-e4f3-4e03-a454-95cc86a6c98f">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="">
+                <input type="text" name="name" id="" required>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="">
                 <label for="message-body">Message</label>
                 <textarea name="message-body" id="" cols="30" rows="10"></textarea>
-                <button>SEND ME A MESSAGE</button>
+                <button type="submit">SEND ME A MESSAGE</button>
             </form>
         </section>
 
